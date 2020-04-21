@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+	<android.support.v7.widget.CardView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		app:cardCornerRadius="8dp"
+		android:layout_margin="14dp"
+		android:id="@+id/aboutCardView">
+
+		<ImageView
+			android:layout_width="match_parent"
+			android:layout_height="140dp"
+			android:id="@+id/aboutcardbac"
+			android:scaleType="centerCrop"/>
+
+		<ImageView
+			android:layout_width="74dp"
+			android:layout_height="74dp"
+			android:layout_gravity="center"
+			android:id="@+id/aboutcardimg"
+			android:scaleType="fitXY"/>
+
+	</android.support.v7.widget.CardView>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="最后编译时间2020.4.21，开发总计耗时0天7小时"
+		android:textSize="9sp"/>
+
+	<View
+		android:background="?android:attr/dividerVertical"
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:layout_marginRight="16dp"/>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="开发者"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:textSize="16sp"
+		android:layout_margin="10dp"/>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Simon/有头发的琦玉/冢虎2018"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:textSize="19sp"
+		android:layout_marginLeft="10dp"/>
+
+	<View
+		android:background="?android:attr/dividerVertical"
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:layout_marginTop="16dp"
+		android:layout_marginRight="16dp"/>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="开发说明"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:textSize="14sp"
+		android:layout_margin="10dp"/>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="优点:\nUtils统一管理\n异常统一管理，通过tuke可以实现异常再现\n无内存泄露\n完美的同步和异步\n全局不传context的toast工具类\nAPI统一管理\n采用mvp把view的事件和activity分离\n夜间模式统一管理(没写具体)\n不足:\n主页的Recyvlerview的复用\nwebutils封装比乱\ndiskutils可以和tuke复用"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:textSize="12sp"
+		android:layout_marginLeft="10dp"/>
+
+	<View
+		android:background="?android:attr/dividerVertical"
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:layout_marginTop="16dp"
+		android:layout_marginRight="16dp"/>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="用到的开源库"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:textSize="14sp"
+		android:layout_margin="10dp"/>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="appcompat-v7\ncardview-v7\nsupport-v4\nrecyclerview-v7\nbumptech.glide\njustbar\n以及本人的Tuke"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:textSize="12sp"
+		android:layout_marginLeft="10dp"/>
+
+</LinearLayout>
+

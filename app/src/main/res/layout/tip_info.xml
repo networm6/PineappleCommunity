@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="80dp"
+		android:text="发布者"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:gravity="bottom|center"
+		android:textSize="22sp"
+		android:id="@+id/tipinfoTitle"
+		android:paddingBottom="10dp"/>
+
+	<View
+		android:background="?android:attr/dividerVertical"
+		android:layout_width="match_parent"
+		android:layout_height="1dp"/>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="发布时间"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:textSize="12sp"
+		android:id="@+id/tipinfomore"
+		android:layout_marginLeft="6dp"
+		android:layout_marginTop="10dp"/>
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="内容"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:layout_margin="14dp"
+		android:id="@+id/tipinfotext"
+		android:textSize="19sp"/>
+
+</LinearLayout>
+

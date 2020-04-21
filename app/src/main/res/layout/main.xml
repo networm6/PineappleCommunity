@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<FrameLayout
+			android:layout_width="match_parent"
+			android:layout_height="80dp"
+			android:paddingTop="24dp"
+			android:background="#FFFFFFFF">
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:text="主页"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:gravity="center"
+				android:id="@+id/mainTitle"/>
+
+			<ImageView
+				android:src="@drawable/search"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="right|center"
+				android:layout_margin="14dp"
+				android:id="@+id/maintitleimg"/>
+
+		</FrameLayout>
+
+		<View
+			android:background="?android:attr/dividerVertical"
+			android:layout_width="match_parent"
+			android:layout_height="1dp"/>
+
+		<android.support.v4.view.ViewPager
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:id="@+id/mainViewPager"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="bottom"
+		android:orientation="vertical"
+		android:gravity="right">
+
+		<ImageView
+			android:src="@drawable/back"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:rotation="90"
+			android:id="@+id/mainback"
+			android:visibility="gone"
+			android:layout_marginRight="14dp"/>
+
+		<com.irozon.justbar.JustBar
+			android:layout_width="match_parent"
+			android:layout_height="56dp"
+			android:id="@+id/mainJustBar"
+			android:layout_margin="14dp">
+
+			<com.irozon.justbar.BarItem
+				app:selectedColor="#FFCCCCCC"
+				app:unSelectedColor="#FFF3F3F3"
+				app:selectedIconColor="#FF00AEFF"
+				app:unSelectedIconColor="#FF000000"
+				app:selected="true"
+				app:icon="@drawable/home"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"/>
+
+			<com.irozon.justbar.BarItem
+				app:selectedColor="#FFCCCCCC"
+				app:unSelectedColor="#FFF3F3F3"
+				app:selectedIconColor="#FF00AEFF"
+				app:unSelectedIconColor="#FF000000"
+				app:selected="false"
+				app:icon="@drawable/add"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"/>
+
+			<com.irozon.justbar.BarItem
+				app:selectedColor="#FFCCCCCC"
+				app:unSelectedColor="#FFF3F3F3"
+				app:selectedIconColor="#FF00AEFF"
+				app:unSelectedIconColor="#FF000000"
+				app:selected="false"
+				app:icon="@drawable/account"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"/>
+
+		</com.irozon.justbar.JustBar>
+
+	</LinearLayout>
+
+</FrameLayout>
+

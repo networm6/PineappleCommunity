@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.cyanmango.app"
+	android:versionCode="1"
+	android:versionName="1.0">
+
+	<uses-sdk
+		android:minSdkVersion="21"
+		android:targetSdkVersion="25"/>
+
+	<uses-permission
+		android:name="android.permission.INTERNET"/>
+
+	<uses-permission
+		android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+	<uses-permission
+		android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+	<application
+		android:name=".App"
+		android:icon="@drawable/ic_launcher"
+		android:label="@string/app_name"
+		android:allowBackup="false"
+		android:resizeableActivity="true"
+		android:theme="@style/AppTheme"
+		android:supportsRtl="true"
+		android:usesCleartextTraffic="true"
+		android:roundIcon="@drawable/ic_launcher">
+
+		<activity
+			android:name="com.cyanmango.app.view.impl.SplashActivity"
+			android:label="@string/app_name">
+
+			<intent-filter>
+
+				<action
+					android:name="android.intent.action.MAIN"/>
+
+				<category
+					android:name="android.intent.category.LAUNCHER"/>
+
+			</intent-filter>
+
+		</activity>
+
+		<activity
+			android:name="com.cyanmango.app.view.impl.MainActivity"/>
+
+		<activity
+			android:name="com.cyanmango.app.view.impl.UserInfoActivity"/>
+
+		<activity
+			android:name="com.cyanmango.app.view.impl.LorSActivity"/>
+
+		<activity
+			android:name="com.cyanmango.app.view.impl.TipInfoActivity"/>
+
+		<activity
+			android:name="com.cyanmango.app.view.impl.AboutActivity"/>
+
+	</application>
+
+</manifest>
+

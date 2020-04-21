@@ -1,0 +1,7 @@
+1:UI实现View方法，
+2.presenter调用具体的逻辑实现（比如 请求网络等）
+3.逻辑实现 回掉presenter方法
+4.presenter回调view。 
+M层：数据模型，存储数据，比如bean
+V层：展示数据
+P层：负责MV之间的桥梁，以及相关的逻辑处理

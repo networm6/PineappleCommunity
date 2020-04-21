@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:padding="14dp">
+
+	<android.support.v7.widget.CardView
+		app:cardCornerRadius="8dp"
+		app:cardBackgroundColor="#FFE6E6E6"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		app:cardElevation="8dp">
+
+		<EditText
+			android:layout_width="match_parent"
+			android:ems="10"
+			android:layout_height="160dp"
+			android:hint="随便放几个屁吧"
+			android:id="@+id/addEditText"/>
+
+	</android.support.v7.widget.CardView>
+
+	<HorizontalScrollView
+		android:layout_width="match_parent"
+		android:layout_height="160dp">
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="wrap_content"
+			android:layout_height="160dp">
+
+			<ImageView
+				android:src="@drawable/img_add"
+				android:layout_width="160dp"
+				android:layout_height="160dp"
+				android:id="@+id/addonclick"/>
+
+			<LinearLayout
+				android:id="@+id/addLinearLayout"
+				android:orientation="horizontal"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"/>
+
+		</LinearLayout>
+
+	</HorizontalScrollView>
+
+	<Button
+		android:layout_width="wrap_content"
+		style="?android:attr/buttonBarButtonStyle"
+		android:layout_height="wrap_content"
+		android:text="保存到本地"
+		android:id="@+id/addsave"/>
+
+	<Switch
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="是否公开"
+		android:id="@+id/addSwitch"/>
+
+</LinearLayout>
+
